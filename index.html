@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Earthify</title>
+        <link rel="icon"href="discord.png" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color:#24252a;">
+        
+        <!--Navbar-->
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Earthify</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="discord.html" style="position:absolute; right:150px;">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit"><img src="discord.png" height="20" width="20" /> Support server</button>
+              </form>
+
+              <form class="form-inline my-2 my-lg-0" action="add.html">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit"><img src="discord.png" height="20" width="20" /> Add bot</button>
+              </form>
+            </div>
+          </nav>
+
+          <!--Main text-->
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <font color="white" size="100" style="position: baseline; top: 100px; right: center;"><center>Earthify</center></font>
+
+          <!--Contact-->
+
+          <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-width: 15rem; position:absolute; bottom:20px; right:35px;">
+            <div class="card-header">Notification</div>
+            <div class="card-body">
+              <h4 class="card-title">Need help?</h4>
+              <p class="card-text">Join our support server!</p>
+            </div>
+          </div>
+
+          <!--Disable right-click menu and text select-->
+
+          <script>
+              window.addEventListener('contextmenu', function (e) { 
+  e.preventDefault(); 
+}, false);
+          </script>
+
+          <script>
+              function disableselect(e) {
+  return false
+}
+
+function reEnable() {
+  return true
+}
+
+document.onselectstart = new Function ("return false")
+
+if (window.sidebar) {
+  document.onmousedown = disableselect
+  document.onclick = reEnable
+}
+          </script>
+              
+    </body>
+</html>
