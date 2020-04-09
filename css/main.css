@@ -9,6 +9,7 @@ body {
     text-rendering: optimizeLegibility;
     border-top: 6px #7289DA solid !important;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 .nav-link {
@@ -142,4 +143,8 @@ body {
     color: #6086f6 !important;
     text-decoration: none !important;
     font-weight: bold !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
