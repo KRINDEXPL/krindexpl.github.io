@@ -1,1 +1,1 @@
-# earthify_website
+# krindex_website
